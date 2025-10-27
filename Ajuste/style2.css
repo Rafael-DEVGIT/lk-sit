@@ -1,0 +1,68 @@
+.acm {
+    margin-top: -130px;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 180px;
+    background-image: url(../Media/wallpaper\ azul\ escuro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.acm-conteudo {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.acm-div1 {
+    width: 350px;
+    height: 750px;
+    padding: 40px 80px;
+    margin-bottom: 350px;
+}
+
+.acm-div2 {
+    width: 95%;
+    padding: 0px 25px;
+}
+
+.acm2-conteudo {
+    margin-top: 30px;
+    color: #ffff;
+    font-family: 'poppins';
+    font-weight: 300;
+}
+
+.acm2-conteudo ul {
+    list-style: none;
+    line-height: 20px;
+}
+
+
+.acm2-conteudo h1 {
+    margin-bottom: 20px;
+}
+
+
+.acm2-conteudo li {
+    font-size: 13px;
+}
+
+.acm2-conteudo p {
+    font-size: 12px;
+}
+
+
+#video-area {
+    flex: 1;
+    padding: 10px;
+}
+
+#video-area video {
+    width: 550px;
+    height: 700px;
+    object-fit: cover;
+    /* ajusta o vídeo para preencher mantendo proporção se possível */
+}
