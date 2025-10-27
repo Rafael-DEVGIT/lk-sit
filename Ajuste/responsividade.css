@@ -710,13 +710,12 @@
             margin-right: 10px;
     }
 
-     .fields-grid {
-        width: 100px;
-     }
 
-    .fields-grid input {
-            width: 140px;
-        }
+      .fields-grid input,
+    .subject-area textarea {
+        width: 100%;
+    }
+
 
 
  }
