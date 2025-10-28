@@ -76,14 +76,14 @@
     }
 
     #video-area video {
-        width: 400px;
+        width: 280px;
         height: 400px;
         object-fit: cover;
         /* ajusta o vídeo para preencher mantendo proporção se possível */
     }
 
     video{
-        width: 330px;
+        width: 280px;
         height: 450px;
     }
 
@@ -805,5 +805,6 @@
 }
 
  
+
 
 
