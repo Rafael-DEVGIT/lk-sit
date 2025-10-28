@@ -506,14 +506,14 @@
 
      .footer-conteudo {
          width: 100%;
-         height: 850px;
+         height: 600px;
          background-color: rgba(10, 30, 94, 0.541);
      }
 
 
      .footer-contatos {
          width: 60%;
-         height: 850px;
+         height: 600px;
          background-image: url(../Media/wallpaper\ azul\ escuro.png);
          background-size: cover;
          background-position: center;
@@ -719,4 +719,5 @@
 
 
  }
+
 
