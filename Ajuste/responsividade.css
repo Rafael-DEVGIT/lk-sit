@@ -24,10 +24,14 @@
         display: flex;
         gap: 10px;
     }
+
+    .tradutor {
+        margin-top: -50px;
+    }
     .tradutor a {
         width: 35px;
         height: 50px;
-        margin-top: -15px;
+        margin-top: -35px;
     }
 
     .tradutor a img {
@@ -590,7 +594,7 @@
          margin: 0 5px;
          text-decoration: none;
          color: rgb(255, 255, 255);
-         background-image: url(../Media/wallpaper\ azul\ escuro.png);
+         background-image: url(./Media/wallpaper\ azul\ escuro.png);
          cursor: pointer;
      }
 
@@ -608,6 +612,19 @@
          margin: 0;
          font-size: 1.1em;
      }
+
+
+     #img-principal {
+        width: 355px;
+        height: 190px;
+        }
+
+     .img-g img {
+            width: 650px;
+            height: 350px;
+            object-fit: cover;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
+        }
 
      .texto-divdestaque h3::after {
          content: '';
@@ -638,7 +655,7 @@
      }
 
      .btn-img-g a img {
-         width: 64px;
+         width:75px;
          height: 45px;
          object-fit: cover;
          cursor: pointer;
