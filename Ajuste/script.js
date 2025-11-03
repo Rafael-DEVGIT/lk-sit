@@ -294,3 +294,85 @@ botoes.forEach(function (btn) {
     btn.classList.add('e-active-btn');
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slideContainer = document.querySelector('.home1');
+  const slides = slideContainer.querySelectorAll('.slidesa img');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.add('hidden');
+      if (i === index) {
+        slide.classList.remove('hidden');
+      }
+    });
+    currentSlide = index;
+  }
+
+  // inicializa
+  showSlide(currentSlide);
+
+  // auto-troca a cada 5 segundos
+  setInterval(() => {
+    let next = (currentSlide + 1) % slides.length;
+    showSlide(next);
+  }, 5000);
+});
+
+
+const slides = document.querySelectorAll('.slide-motivos .slide-item');
+const prevBtn = document.querySelector('.slide-motivos .nav-btn.prev');
+const nextBtn = document.querySelector('.slide-motivos .nav-btn.next');
+const dots = document.querySelectorAll('.slide-motivos .dot');
+let currentIndex = 0;
+const intervalTime = 5000;
+let slideInterval;
+
+function showSlide(index) {
+  slides.forEach((sl, i) => {
+    sl.classList.toggle('active', i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+}
+
+nextBtn.addEventListener('click', () => {
+  nextSlide();
+  resetInterval();
+});
+prevBtn.addEventListener('click', () => {
+  prevSlide();
+  resetInterval();
+});
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    const idx = parseInt(dot.getAttribute('data-slide'), 10);
+    currentIndex = idx;
+    showSlide(currentIndex);
+    resetInterval();
+  });
+});
+
+function startInterval() {
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
+function resetInterval() {
+  clearInterval(slideInterval);
+  startInterval();
+}
+
+showSlide(currentIndex);
+startInterval();
