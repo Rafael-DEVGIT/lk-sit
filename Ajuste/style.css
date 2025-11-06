@@ -321,6 +321,10 @@ section h1 {
     color: #ffff;
 }
 
+.section2-conteudo h4{
+    font-family:"poppins";
+    color: #ffff;
+}
 
 .depo-img {
     margin-top: 70px;
@@ -1108,6 +1112,7 @@ section h1 {
         width: 400px;
         height: 630px;
     }
+
 
 
 
