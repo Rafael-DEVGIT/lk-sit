@@ -326,6 +326,9 @@ section h1 {
     font-size: 22px;
     color: #ffff;
 }
+#h333 {
+    font-size: 32px;
+}
 
 .depo-img {
     margin-top: 70px;
@@ -348,7 +351,7 @@ section h1 {
 
 .conquistas {
     display: flex;
-    gap: 250px;
+    gap: 160px;
     align-items: center;
     justify-content: center;
 }
@@ -1113,8 +1116,6 @@ section h1 {
         width: 400px;
         height: 630px;
     }
-
-
 
 
 
