@@ -380,20 +380,6 @@ section h1 {
     animation: fadeInUp 2s forwards
 }
 
-/* sufixo ao lado do número (ex: "anos") - mesmo visual do .counter */
-.counter-suffix {
-    font-family: 'poppins';
-    font-size: 100px;
-    font-weight: bold;
-    color: rgb(252, 252, 252);
-    display: inline-block;
-    margin-left: 8px;
-    vertical-align: bottom;
-    transform: translateY(100px);
-    opacity: 0;
-    animation: fadeInUp 2s forwards;
-}
-
 .counter:nth-child(1) {
   animation-delay: 0s;
 }
