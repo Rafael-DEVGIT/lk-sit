@@ -4,11 +4,6 @@
          width: 120px;
          margin-top: 7px;
      }
-  
-  #h333 {
-    font-size: 18px;
-}
-
 
      .imagem-fixa {
          position: fixed;
@@ -263,14 +258,41 @@
      }
 
      .section2-conteudo h1 {
-         margin-top: 65px;
+        margin-left: 30px;
+         margin-top: 30px;
          color: #ffff;
      }
 
 
+     
+.conquistas h3{
+    font-family:"poppins";
+    font-size: 16px;
+    color: #ffff;
+}
+
+#h333 {
+    font-size: 12px;
+}
+
+     .counter-suffix {
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: bottom;
+    transform: translateY(100px);
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+
      .conquistas {
          display: flex;
-         gap: 40px;
+         padding: 0px 10px;
+         gap: 10px 5px 10px;
          align-items: center;
          justify-content: center;
      }
@@ -280,7 +302,7 @@
      }
 
      .conquistas div h3 {
-         font-size: 17px;
+         font-size: 15px;
      }
 
      .counter {
@@ -502,7 +524,7 @@
      .footer {
          display: block;
          width: 100%;
-         height: 600px;
+         height: 570px;
          background-image: url(../Media/wallpaper\ section.png);
          background-size: cover;
          background-position: center;
@@ -513,14 +535,14 @@
 
      .footer-conteudo {
          width: 100%;
-         height: 600px;
+         height: 570px;
          background-color: rgba(10, 30, 94, 0.541);
      }
 
 
      .footer-contatos {
          width: 60%;
-         height: 600px;
+         height: 570px;
          background-image: url(../Media/wallpaper\ azul\ escuro.png);
          background-size: cover;
          background-position: center;
@@ -711,6 +733,7 @@
 
     .form-side {
         width: 330px;
+        margin-left: 20px;
         background-image: url(/Media/wallpaper\ azul\ escuro.png);
     }
     
@@ -739,7 +762,6 @@
 
 
  }
-
 
 
 
